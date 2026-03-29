@@ -1,0 +1,4 @@
+@model IReadOnlyList<IPB2.OnlineBookStoreSystem.Mvc.Features.Customers.CustomerResponse>
+<h3>Customers</h3>
+<form method="post" action="/Customers/Create"><input name="FullName" placeholder="Full Name" required /><input name="Email" placeholder="Email" /><input name="Phone" placeholder="Phone" /><input name="Address" placeholder="Address" /><button>Add</button></form>
+<table border="1"><tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th></th></tr>@foreach (var x in Model){<tr><td>@x.CustomerId</td><td>@x.FullName</td><td>@x.Email</td><td>@x.Phone</td><td><form method="post" action="/Customers/Delete/@x.CustomerId"><button>Delete</button></form></td></tr>}</table>

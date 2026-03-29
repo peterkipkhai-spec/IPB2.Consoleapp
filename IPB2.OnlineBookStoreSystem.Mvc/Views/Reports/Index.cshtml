@@ -1,0 +1,8 @@
+@model IPB2.OnlineBookStoreSystem.Mvc.Features.Reports.ReportsVm
+<h3>Reports</h3>
+<h4>Sales</h4>
+<ul>@foreach (var x in Model.Sales){<li>@x.Date.ToShortDateString() - @x.TotalSales (@x.PaymentCount)</li>}</ul>
+<h4>Stock</h4>
+<ul>@foreach (var x in Model.Stock.Take(20)){<li>@x.Title - @x.Stock</li>}</ul>
+<h4>Customer Summary</h4>
+<ul>@foreach (var x in Model.CustomerSummary.Take(20)){<li>@x.FullName - @x.TotalOrders / @x.TotalSpent</li>}</ul>
