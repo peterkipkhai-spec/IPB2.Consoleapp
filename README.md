@@ -46,3 +46,26 @@ git push -u origin main
 If GitHub rejects username/password, use a **Personal Access Token (PAT)** as password.
 
 Also make sure `bin/`, `obj/`, `.vs/` are ignored (this repository now includes `.gitignore`).
+
+
+## PR Conflict Fix (for `IPB2.Consoleapp.sln`)
+
+If GitHub shows a conflict in `IPB2.Consoleapp.sln`, do this in your local branch:
+
+```bash
+git fetch origin
+git checkout <your-branch>
+git merge origin/master
+```
+
+Then keep:
+- `IPB2.Consoleapp.sln` for Console + WinForms only
+- `IPB2.OnlineBookStoreSystem.sln` for Domain + MinimalApi + MVC
+
+After that:
+
+```bash
+git add IPB2.Consoleapp.sln IPB2.OnlineBookStoreSystem.sln
+git commit -m "resolve sln conflict by splitting solutions"
+git push
+```
