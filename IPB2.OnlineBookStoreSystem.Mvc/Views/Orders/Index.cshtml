@@ -1,0 +1,5 @@
+@model IReadOnlyList<IPB2.OnlineBookStoreSystem.Mvc.Features.Orders.OrderResponse>
+<h3>Orders</h3>
+<form method="post" action="/Orders/Create"><input name="CustomerId" placeholder="CustomerId" /><button>Create Order</button></form>
+<form method="post" action="/Orders/AddItem"><input name="OrderId" placeholder="OrderId" /><input name="BookId" placeholder="BookId" /><input name="Quantity" placeholder="Qty" /><button>Add Item</button></form>
+<table border="1"><tr><th>ID</th><th>Customer</th><th>Total</th><th>Status</th><th>Action</th></tr>@foreach(var x in Model){<tr><td>@x.OrderId</td><td>@x.FullName</td><td>@x.TotalAmount</td><td>@x.Status</td><td><form method="post" action="/Orders/Cancel/@x.OrderId"><button>Cancel</button></form></td></tr>}</table>
