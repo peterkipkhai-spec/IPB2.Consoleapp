@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IPB2.OnlineBookStoreSystem.Domain\IPB2.OnlineBookStoreSystem.Domain.csproj" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\IPB2.OnlineBookStoreSystem.MinimalApi\Data\SqlBookStoreRepository.cs" Link="Data\SqlBookStoreRepository.cs" />
+  </ItemGroup>
+</Project>

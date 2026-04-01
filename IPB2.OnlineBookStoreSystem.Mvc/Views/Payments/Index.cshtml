@@ -1,0 +1,5 @@
+@model IReadOnlyList<IPB2.OnlineBookStoreSystem.Mvc.Features.Payments.PaymentResponse>
+<h3>Payments</h3>
+<form method="get" action="/Payments/Index"><input name="orderId" placeholder="OrderId" /><button>Load</button></form>
+<form method="post" action="/Payments/Create"><input name="OrderId" placeholder="OrderId"/><input name="Amount" placeholder="Amount"/><input name="PaymentMethod" placeholder="Method"/><button>Pay</button></form>
+<table border="1"><tr><th>ID</th><th>Order</th><th>Amount</th><th>Method</th><th>Date</th></tr>@foreach(var x in Model){<tr><td>@x.PaymentId</td><td>@x.OrderId</td><td>@x.Amount</td><td>@x.PaymentMethod</td><td>@x.PaymentDate</td></tr>}</table>
