@@ -13,22 +13,18 @@ This repository now includes the architecture you asked for:
    - Async/await data access using `Microsoft.Data.SqlClient`
    - Uses domain service + repository pattern
 
-3. **Web API (Controller style)** (`IPB2.OnlineBookStoreSystem.WebApi`)
-   - Controller-based API format (similar to EmployeeLeaveManagementSystem style)
-   - Uses domain service + SQL repository
-
-4. **MVC App** (`IPB2.OnlineBookStoreSystem.Mvc`)
+3. **MVC App** (`IPB2.OnlineBookStoreSystem.Mvc`)
    - Feature-based folders (`Features/*`)
    - Request/Response models per feature
    - Uses `HttpClient` (`BookStoreApiClient`) to call Web API/Minimal API
 
-5. Existing **WinForms** project is kept for reference.
+4. Existing **WinForms** project is kept for reference.
 
 ## Run Order
 
-- Start Web API (`IPB2.OnlineBookStoreSystem.WebApi`) first.
+- Start Minimal API first.
 - Then run MVC app (configure `Api:BaseUrl` in MVC `appsettings.json`).
-- Update connection string in Web API `appsettings.json`.
+- Update connection string in Minimal API `appsettings.json`.
 
 
 ## Git Upload (if push fails)
