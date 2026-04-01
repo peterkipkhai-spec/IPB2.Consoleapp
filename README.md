@@ -16,7 +16,7 @@ This repository now includes the architecture you asked for:
 3. **MVC App** (`IPB2.OnlineBookStoreSystem.Mvc`)
    - Feature-based folders (`Features/*`)
    - Request/Response models per feature
-   - Uses `HttpClient` (`BookStoreApiClient`) to call Web API/Minimal API
+   - Uses `HttpClient` (`BookStoreApiClient`) to call Minimal API
 
 4. Existing **WinForms** project is kept for reference.
 
