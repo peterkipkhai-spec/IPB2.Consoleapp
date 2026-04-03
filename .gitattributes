@@ -3,7 +3,6 @@
 
 # Help reduce recurring merge conflicts in solution/readme files
 *.sln merge=union
-README.md merge=union
 
 # Keep Windows solution files with CRLF
 *.sln text eol=crlf
