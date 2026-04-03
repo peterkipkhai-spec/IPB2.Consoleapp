@@ -1,0 +1,12 @@
+@model IReadOnlyList<IPB2.OnlineBookStoreSystem.Mvc.Features.Books.BookResponse>
+<h3>Books</h3>
+<form method="post" action="/Books/Create">
+<input name="Title" placeholder="Title" required />
+<input name="AuthorId" placeholder="AuthorId" required />
+<input name="CategoryId" placeholder="CategoryId" required />
+<input name="Price" placeholder="Price" required />
+<input name="Stock" placeholder="Stock" required />
+<input name="PublishedYear" placeholder="Year" />
+<input name="Isbn" placeholder="ISBN" />
+<button>Add</button></form>
+<table border="1"><tr><th>ID</th><th>Title</th><th>Price</th><th>Stock</th><th></th></tr>@foreach (var x in Model){<tr><td>@x.BookId</td><td>@x.Title</td><td>@x.Price</td><td>@x.Stock</td><td><form method="post" action="/Books/Delete/@x.BookId"><button>Delete</button></form></td></tr>}</table>

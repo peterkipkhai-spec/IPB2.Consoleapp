@@ -1,0 +1,4 @@
+@model IReadOnlyList<IPB2.OnlineBookStoreSystem.Mvc.Features.Categories.CategoryResponse>
+<h3>Categories</h3>
+<form method="post" action="/Categories/Create"><input name="CategoryName" placeholder="Category" required /><input name="Description" placeholder="Description" /><button>Add</button></form>
+<table border="1"><tr><th>ID</th><th>Name</th><th>Description</th><th></th></tr>@foreach (var x in Model){<tr><td>@x.CategoryId</td><td>@x.CategoryName</td><td>@x.Description</td><td><form method="post" action="/Categories/Delete/@x.CategoryId"><button>Delete</button></form></td></tr>}</table>

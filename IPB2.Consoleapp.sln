@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36717.8 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.Consoleapp", "IPB2.Consoleapp\IPB2.Consoleapp.csproj", "{D112A0CD-8577-4412-9445-3A06692C5AE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.OnlineBookStoreSystem.WindowForm", "IPB2.OnlineBookStoreSystem.WindowForm\IPB2.OnlineBookStoreSystem.WindowForm.csproj", "{A130B36E-90D8-43D8-B77F-596A775117C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D112A0CD-8577-4412-9445-3A06692C5AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D112A0CD-8577-4412-9445-3A06692C5AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D112A0CD-8577-4412-9445-3A06692C5AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A130B36E-90D8-43D8-B77F-596A775117C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A130B36E-90D8-43D8-B77F-596A775117C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A130B36E-90D8-43D8-B77F-596A775117C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A130B36E-90D8-43D8-B77F-596A775117C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
