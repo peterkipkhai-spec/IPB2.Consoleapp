@@ -1,6 +1,6 @@
 using IPB2.OnlineBookStoreSystem.Domain.Interfaces;
 using IPB2.OnlineBookStoreSystem.Domain.Services;
-using IPB2.OnlineBookStoreSystem.Database.Repositories;
+using IPB2.OnlineBookStoreSystem.MinimalApi.Data;
 using IPB2.OnlineBookStoreSystem.MinimalApi.Features.Authors;
 using IPB2.OnlineBookStoreSystem.MinimalApi.Features.Books;
 using IPB2.OnlineBookStoreSystem.MinimalApi.Features.Categories;

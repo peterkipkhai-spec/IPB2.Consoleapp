@@ -6,6 +6,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\IPB2.OnlineBookStoreSystem.Domain\IPB2.OnlineBookStoreSystem.Domain.csproj" />
-    <ProjectReference Include="..\IPB2.OnlineBookStoreSystem.Database\IPB2.OnlineBookStoreSystem.Database.csproj" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
   </ItemGroup>
 </Project>

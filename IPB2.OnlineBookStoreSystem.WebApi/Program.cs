@@ -1,6 +1,6 @@
 using IPB2.OnlineBookStoreSystem.Domain.Interfaces;
 using IPB2.OnlineBookStoreSystem.Domain.Services;
-using IPB2.OnlineBookStoreSystem.Database.Repositories;
+using IPB2.OnlineBookStoreSystem.MinimalApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
